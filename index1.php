@@ -22,6 +22,7 @@ $rooms = array(
         'Discount' => 15,
     ),
 );
-echo '<pre>';
-print_r($rooms);
-echo '</pre>';
+?>
+<pre>
+<?php print_r($rooms) ?>
+</pre>
