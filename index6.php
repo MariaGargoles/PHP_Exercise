@@ -29,17 +29,17 @@ $mysqli->close();
 ?>
 
 <?php if ($foundRoom): ?>
-    <h1>Room: <?= htmlspecialchars($foundRoom['roomType']) ?></h1>
-    <ul>
-        <li>Name: <?= htmlspecialchars($foundRoom['roomType']) ?></li>
-        <li>Number: <?= htmlspecialchars($foundRoom['roomNumber']) ?></li>
-        <li>Price: <?= htmlspecialchars($foundRoom['price']) ?>$</li>
-        <li>Discount: <?= htmlspecialchars($foundRoom['discount']) ?>%</li>
-        <li>Price Discount:
-            <?= htmlspecialchars($foundRoom['price'] - ($foundRoom['price'] * ($foundRoom['discount'] / 100))) ?>$</li>
-    </ul>
+<h1>Room: <?= htmlspecialchars($foundRoom['roomType']) ?></h1>
+<ul>
+    <li>Name: <?= htmlspecialchars($foundRoom['roomType']) ?></li>
+    <li>Number: <?= htmlspecialchars($foundRoom['roomNumber']) ?></li>
+    <li>Price: <?= htmlspecialchars($foundRoom['price']) ?>$</li>
+    <li>Discount: <?= htmlspecialchars($foundRoom['discount']) ?>%</li>
+    <li>Price Discount:
+        <?= htmlspecialchars($foundRoom['price'] - ($foundRoom['price'] * ($foundRoom['discount'] / 100))) ?>$</li>
+</ul>
 <?php elseif (isset($_GET['id']) && $id !== -1): ?>
-    <p>id not found</p>
+<p>id not found</p>
 <?php else: ?>
-    <p>No room id provided.</p>
+<p>No room id provided.</p>
 <?php endif; ?>
