@@ -29,10 +29,10 @@ $mysqli->close();
 ?>
 
 <?php if ($foundRoom): ?>
-<h1>Room: <?= htmlspecialchars($foundRoom['roomType']) ?></h1>
+<h1>Room: <?= htmlspecialchars($foundRoom['BedType']) ?></h1>
 <ul>
-    <li>Name: <?= htmlspecialchars($foundRoom['roomType']) ?></li>
-    <li>Number: <?= htmlspecialchars($foundRoom['roomNumber']) ?></li>
+    <li>Name: <?= htmlspecialchars($foundRoom['BedType']) ?></li>
+    <li>Number: <?= htmlspecialchars($foundRoom['number']) ?></li>
     <li>Price: <?= htmlspecialchars($foundRoom['price']) ?>$</li>
     <li>Discount: <?= htmlspecialchars($foundRoom['discount']) ?>%</li>
     <li>Price Discount:

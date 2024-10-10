@@ -29,7 +29,7 @@ if (!$rooms) {
 <?php while ($room = $rooms->fetch_assoc()): ?>
 <ul>
     <li>Name: <?= htmlspecialchars($room['BedType']) ?></li>
-    <li>Number: <?= htmlspecialchars($room['roomNumber']) ?></li>
+    <li>Number: <?= htmlspecialchars($room['number']) ?></li>
     <li>Price: <?= htmlspecialchars($room['price']) ?>$</li>
     <li>Discount: <?= htmlspecialchars($room['discount']) ?>%</li>
     <li>Price Discount: <?= htmlspecialchars($room['price'] - ($room['price'] * ($room['discount'] / 100))) ?>$</li>
